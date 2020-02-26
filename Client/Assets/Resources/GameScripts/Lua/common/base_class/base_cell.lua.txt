@@ -1,0 +1,5 @@
+BaseCell = BaseCell or BaseClass(BaseUI)
+
+function BaseCell:HandleUICallBack(callback)
+	callback()
+end

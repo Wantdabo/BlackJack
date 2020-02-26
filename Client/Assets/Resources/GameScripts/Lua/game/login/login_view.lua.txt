@@ -1,0 +1,36 @@
+LoginView = LoginView or BaseClass(BaseView)
+
+function LoginView:Ctor()
+
+end
+
+function LoginView:LoadCallBack()
+	self.login_click_event = EventManager:Add(Event.LOGIN_CLICK, function()
+		self:LoginClick()
+	end)
+	LoginCtrl:Connect()
+end
+
+function LoginView:OpenCallBack()
+
+end
+
+function LoginView:OnFlush()
+
+end
+
+function LoginView:LoginClick(params)
+	local login_name = self.login_name.text
+	if #login_name > 0 then
+		LoginData:SetLoginName(login_name)
+		LoginCtrl:ReqLogin(login_name)
+	end
+end
+
+function LoginView:ReleaseCallBack()
+	EventManager:Remove(self.login_click_event)
+end
+
+function LoginView:CloseCallBack()
+
+end

@@ -1,0 +1,8 @@
+E:\GitHub\BlackJack\Server\Network\bin\Debug\netstandard2.0\Network.deps.json
+E:\GitHub\BlackJack\Server\Network\bin\Debug\netstandard2.0\Network.dll
+E:\GitHub\BlackJack\Server\Network\bin\Debug\netstandard2.0\Network.pdb
+E:\GitHub\BlackJack\Server\Network\obj\Debug\netstandard2.0\Network.csprojAssemblyReference.cache
+E:\GitHub\BlackJack\Server\Network\obj\Debug\netstandard2.0\Network.AssemblyInfoInputs.cache
+E:\GitHub\BlackJack\Server\Network\obj\Debug\netstandard2.0\Network.AssemblyInfo.cs
+E:\GitHub\BlackJack\Server\Network\obj\Debug\netstandard2.0\Network.dll
+E:\GitHub\BlackJack\Server\Network\obj\Debug\netstandard2.0\Network.pdb

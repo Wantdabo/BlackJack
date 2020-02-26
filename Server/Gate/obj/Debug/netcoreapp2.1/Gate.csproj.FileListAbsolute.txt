@@ -1,0 +1,15 @@
+E:\GitHub\BlackJack\Server\Gate\bin\Debug\netcoreapp2.1\Gate.deps.json
+E:\GitHub\BlackJack\Server\Gate\bin\Debug\netcoreapp2.1\Gate.runtimeconfig.json
+E:\GitHub\BlackJack\Server\Gate\bin\Debug\netcoreapp2.1\Gate.runtimeconfig.dev.json
+E:\GitHub\BlackJack\Server\Gate\bin\Debug\netcoreapp2.1\Gate.dll
+E:\GitHub\BlackJack\Server\Gate\bin\Debug\netcoreapp2.1\Gate.pdb
+E:\GitHub\BlackJack\Server\Gate\bin\Debug\netcoreapp2.1\Network.dll
+E:\GitHub\BlackJack\Server\Gate\bin\Debug\netcoreapp2.1\Network.pdb
+E:\GitHub\BlackJack\Server\Gate\obj\Debug\netcoreapp2.1\Gate.csprojAssemblyReference.cache
+E:\GitHub\BlackJack\Server\Gate\obj\Debug\netcoreapp2.1\Gate.AssemblyInfoInputs.cache
+E:\GitHub\BlackJack\Server\Gate\obj\Debug\netcoreapp2.1\Gate.AssemblyInfo.cs
+E:\GitHub\BlackJack\Server\Gate\obj\Debug\netcoreapp2.1\Gate.csproj.CopyComplete
+E:\GitHub\BlackJack\Server\Gate\obj\Debug\netcoreapp2.1\Gate.dll
+E:\GitHub\BlackJack\Server\Gate\obj\Debug\netcoreapp2.1\Gate.pdb
+E:\GitHub\BlackJack\Server\Gate\bin\Debug\netcoreapp2.1\Log.dll
+E:\GitHub\BlackJack\Server\Gate\bin\Debug\netcoreapp2.1\Log.pdb

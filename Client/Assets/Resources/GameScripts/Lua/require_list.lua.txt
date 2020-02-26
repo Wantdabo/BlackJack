@@ -1,0 +1,12 @@
+local require_list = {
+	"common/event_manager",
+	"common/view_manager",
+	"common/sound_manager",
+	"common/config_manager",
+
+	"game/login/login_ctrl",
+	"game/hall/hall_ctrl",
+	"game/room/room_ctrl"
+}
+
+return require_list

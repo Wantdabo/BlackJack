@@ -1,0 +1,27 @@
+require("game/room/room_view")
+require("game/room/room_data")
+
+RoomCtrl = RoomCtrl or BaseClass()
+
+function RoomCtrl:Ctor()
+	self.view = RoomView.New(View.RoomView)
+	self.data = RoomData.New()
+end
+
+function RoomCtrl:Dtor()
+
+end
+
+function RoomCtrl:ReqRoom(opt, room_id)
+    local brw = BufferRW()
+    brw:BeginWrite()
+    brw:WriteInt16(10003)
+    brw:WriteInt32(SESSION_ID)
+    brw:WriteInt16(opt)
+    brw:WriteInt16(room_id or 0)
+
+    HandleSend(brw)
+end
+
+function RoomCtrl:ResRoom(info)
+end

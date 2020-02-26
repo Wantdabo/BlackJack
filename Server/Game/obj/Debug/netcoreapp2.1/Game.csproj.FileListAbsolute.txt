@@ -1,0 +1,17 @@
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Game.deps.json
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Game.runtimeconfig.json
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Game.runtimeconfig.dev.json
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Game.dll
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Game.pdb
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Gate.dll
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Log.dll
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Network.dll
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Gate.pdb
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Log.pdb
+E:\GitHub\BlackJack\Server\Game\bin\Debug\netcoreapp2.1\Network.pdb
+E:\GitHub\BlackJack\Server\Game\obj\Debug\netcoreapp2.1\Game.csprojAssemblyReference.cache
+E:\GitHub\BlackJack\Server\Game\obj\Debug\netcoreapp2.1\Game.AssemblyInfoInputs.cache
+E:\GitHub\BlackJack\Server\Game\obj\Debug\netcoreapp2.1\Game.AssemblyInfo.cs
+E:\GitHub\BlackJack\Server\Game\obj\Debug\netcoreapp2.1\Game.csproj.CopyComplete
+E:\GitHub\BlackJack\Server\Game\obj\Debug\netcoreapp2.1\Game.dll
+E:\GitHub\BlackJack\Server\Game\obj\Debug\netcoreapp2.1\Game.pdb

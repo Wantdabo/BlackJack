@@ -1,0 +1,31 @@
+require("game/login/login_view")
+require("game/login/login_data")
+
+LoginCtrl = LoginCtrl or BaseClass()
+
+function LoginCtrl:Ctor()
+	self.view = LoginView.New(View.LoginView)
+	self.data = LoginData.New()
+end
+
+function LoginCtrl:Dtor()
+
+end
+
+function LoginCtrl:Connect()
+	Link:Connect("127.0.0.1", 20000)
+end
+
+function LoginCtrl:ReqLogin(login_name)
+	local brw = BufferRW()
+	brw:BeginWrite()
+	brw:WriteInt16(10001)
+	brw:WriteInt32(SESSION_ID)
+	brw:WriteString(login_name)
+	HandleSend(brw)
+end
+
+function LoginCtrl:ResLogin(info)
+	ViewManager:Close(View.LoginView)
+	ViewManager:Open(View.HallView)
+end

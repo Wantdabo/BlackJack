@@ -1,0 +1,8 @@
+HallData = HallData or BaseClass()
+
+function HallData:Ctor()
+end
+
+function HallData:Dtor()
+
+end

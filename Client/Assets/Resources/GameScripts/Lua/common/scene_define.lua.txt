@@ -1,0 +1,9 @@
+Scene = {
+	Noobcamp = "Noobcamp",
+	Kingdom = "Kingdom",
+	
+	MAPPING = {
+		Noobcamp = "scenes_noobcamp@unity",
+		Kingdom = "scenes_kingdom@unity",
+	}
+}

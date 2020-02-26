@@ -1,0 +1,15 @@
+E:\GitHub\BlackJack\Server\Login\bin\Debug\netcoreapp2.1\Login.deps.json
+E:\GitHub\BlackJack\Server\Login\bin\Debug\netcoreapp2.1\Login.runtimeconfig.json
+E:\GitHub\BlackJack\Server\Login\bin\Debug\netcoreapp2.1\Login.runtimeconfig.dev.json
+E:\GitHub\BlackJack\Server\Login\bin\Debug\netcoreapp2.1\Login.dll
+E:\GitHub\BlackJack\Server\Login\bin\Debug\netcoreapp2.1\Login.pdb
+E:\GitHub\BlackJack\Server\Login\bin\Debug\netcoreapp2.1\Log.dll
+E:\GitHub\BlackJack\Server\Login\bin\Debug\netcoreapp2.1\Network.dll
+E:\GitHub\BlackJack\Server\Login\bin\Debug\netcoreapp2.1\Log.pdb
+E:\GitHub\BlackJack\Server\Login\bin\Debug\netcoreapp2.1\Network.pdb
+E:\GitHub\BlackJack\Server\Login\obj\Debug\netcoreapp2.1\Login.csprojAssemblyReference.cache
+E:\GitHub\BlackJack\Server\Login\obj\Debug\netcoreapp2.1\Login.AssemblyInfoInputs.cache
+E:\GitHub\BlackJack\Server\Login\obj\Debug\netcoreapp2.1\Login.AssemblyInfo.cs
+E:\GitHub\BlackJack\Server\Login\obj\Debug\netcoreapp2.1\Login.csproj.CopyComplete
+E:\GitHub\BlackJack\Server\Login\obj\Debug\netcoreapp2.1\Login.dll
+E:\GitHub\BlackJack\Server\Login\obj\Debug\netcoreapp2.1\Login.pdb

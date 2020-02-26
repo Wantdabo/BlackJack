@@ -1,0 +1,61 @@
+HallView = HallView or BaseClass(BaseView)
+
+function HallView:Ctor()
+
+end
+
+function HallView:LoadCallBack()
+	self.quick_start_event = EventManager:Add(Event.HALL_QUICK, function(event)
+		self:QuickStart(event.eventKey)
+	end)
+
+	self.join_room_event = EventManager:Add(Event.HALL_JOIN, function(event)
+		self:JoinRoom(event.eventKey)
+	end)
+
+	HallCtrl:ReqHall(0)
+end
+
+function HallView:OpenCallBack()
+end
+
+function HallView:OnFlush()
+
+end
+
+function HallView:FlushHall(name, money, room_players)
+	self.name.text = "Name: " .. name
+	self.money.text = "Money: " .. money
+	if self.room_items == nil then
+		self.room_items = {}
+		for i = 1, #room_players do
+			self.room_items[i] = BaseCell.New()
+			self.room_items[i]:Bind(self.room_org, self.room_content)
+			self.room_items[i].rect.localScale = Vector3(1, 1, 1)
+		end
+	end
+
+	for k, v in ipairs(self.room_items) do
+		v.status.text = "Player:" .. room_players[k] .. "/10"
+		v.send_event.eventKey = k
+		v.room_id.text = "Room:" .. k
+	end
+end
+
+function HallView:QuickStart(params)
+	print_error("quick start")
+end
+
+function HallView:JoinRoom(params)
+	HallCtrl:ReqHall(1, tonumber(params))
+end
+
+function HallView:ReleaseCallBack()
+	self.room_items = nil
+	EventManager:Remove(self.quick_start_event)
+	EventManager:Remove(self.join_room_event)
+end
+
+function HallView:CloseCallBack()
+
+end

@@ -1,0 +1,77 @@
+GameObject = CS.UnityEngine.GameObject
+Vector2 = CS.UnityEngine.Vector2
+Vector3 = CS.UnityEngine.Vector3
+Color = CS.UnityEngine.Color
+AudioSource = CS.UnityEngine.AudioSource
+CanvasGroup = CS.UnityEngine.CanvasGroup
+CanvasScaler = CS.UnityEngine.UI.CanvasScaler
+
+VariableTable = CS.VariableTable
+
+Main = CS.Main.Instance
+AssetLoader = CS.AssetLoader.Instance
+Link = CS.Link.Instance
+BufferRW = CS.Network.BufferRW
+SceneLoader = CS.SceneLoader.Instance
+Timer = CS.Timer
+Log = CS.Log.Instance
+
+UIRoot = Main.uiRoot
+UISound = Main.uiSound
+
+require("common/event_define")
+require("common/view_define")
+require("common/sound_define")
+require("common/scene_define")
+require("common/game_enum")
+
+require("common/base_class/base_class")
+require("common/utils")
+require("common/clock")
+require("common/functions")
+require("common/base_class/base_ui")
+require("common/base_class/base_view")
+require("common/base_class/base_cell")
+local proto_list = require("common/proto_list")
+
+SESSION_ID = 0
+
+function LoadGameCtrl()
+	local require_list = require("require_list")
+	for _, v in ipairs(require_list) do
+		require(v)
+	end
+
+	Utils.New()
+	Clock.New()
+	EventManager.New()
+	ViewManager.New()
+	SoundManager.New()
+
+	LoginCtrl.New()
+	HallCtrl.New()
+	RoomCtrl.New()
+end
+
+function Start()
+	LoadGameCtrl()
+	ViewManager:Open(View.LoginView)
+end
+
+function HandleEvent(event)
+	EventManager:Fire(event.eventID, event)
+end
+
+function HandleSocketInfo(info)
+	if info.readByte <= 1 then return end
+	local brw = BufferRW()
+	brw:BeginRead(info.buffer)
+	local proto = brw:ReadInt16()
+	local callback = proto_list[proto]
+	brw:EndRead()
+	if callback ~= nil then callback(info) end
+end
+
+function HandleSend(brw)
+	Link:Send(brw)
+end

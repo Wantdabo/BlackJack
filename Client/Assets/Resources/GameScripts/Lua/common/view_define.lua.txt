@@ -1,0 +1,5 @@
+View = {
+	LoginView = "views_main_loginview@prefab",
+	HallView = "views_main_hallview@prefab",
+	RoomView = "views_main_roomview@prefab"
+}

@@ -1,0 +1,35 @@
+RoomView = RoomView or BaseClass(BaseView)
+
+function RoomView:Ctor()
+
+end
+
+function RoomView:LoadCallBack()
+	RoomCtrl:ReqRoom(0)
+end
+
+function RoomView:OpenCallBack()
+
+end
+
+function RoomView:OnFlush()
+
+end
+
+function RoomView:FlushRoomPlayer(players)
+	if self.player_items == nil then
+		self.player_items = {}
+		for k, v in ipairs(players) do
+			self.player_items[k] = BaseCell.New()
+			self.player_items[k]:Bind(self.player_org, self.other_player)
+		end
+	end
+end
+
+function RoomView:ReleaseCallBack()
+
+end
+
+function RoomView:CloseCallBack()
+
+end

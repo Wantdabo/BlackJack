@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Game/1.0.0": {
+        "dependencies": {
+          "Gate": "1.0.0",
+          "Log": "1.0.0"
+        },
+        "runtime": {
+          "Game.dll": {}
+        }
+      },
+      "Gate/1.0.0": {
+        "dependencies": {
+          "Log": "1.0.0",
+          "Network": "1.0.0"
+        },
+        "runtime": {
+          "Gate.dll": {}
+        }
+      },
+      "Log/1.0.0": {
+        "runtime": {
+          "Log.dll": {}
+        }
+      },
+      "Network/1.0.0": {
+        "runtime": {
+          "Network.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Game/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Gate/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Log/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Network/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

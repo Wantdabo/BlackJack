@@ -1,0 +1,13 @@
+LoginData = LoginData or BaseClass()
+
+function LoginData:Ctor()
+	self.login_name = nil
+end
+
+function LoginData:Dtor()
+
+end
+
+function LoginData:SetLoginName(login_name)
+	self.login_name = login_name
+end

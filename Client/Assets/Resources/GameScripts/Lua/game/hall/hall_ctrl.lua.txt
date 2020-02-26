@@ -1,0 +1,73 @@
+require("game/hall/hall_view")
+require("game/hall/hall_data")
+
+HallCtrl = HallCtrl or BaseClass()
+
+function HallCtrl:Ctor()
+	self.view = HallView.New(View.HallView)
+	self.data = HallData.New()
+end
+
+function HallCtrl:Dtor()
+
+end
+
+function HallCtrl:ReqHall(opt, room_id)
+	local brw = BufferRW()
+	brw:BeginWrite()
+	brw:WriteInt16(10002)
+	brw:WriteInt32(SESSION_ID)
+	brw:WriteInt16(opt)
+	brw:WriteInt16(room_id or 0)
+
+	HandleSend(brw)
+end
+
+function HallCtrl:ResHall(info)
+    local brw = BufferRW()
+    brw:BeginRead(info.buffer)
+    local proto = brw:ReadInt16()
+    local session = brw:ReadInt32()
+    local opt = brw:ReadInt16()
+    brw:EndRead()
+
+    if opt == 0 then
+        self:ResQuery(info)
+    elseif opt == 1 then
+        self:ResJoin(info)
+    end
+end
+
+function HallCtrl:ResQuery(info)
+    local brw = BufferRW()
+    brw:BeginRead(info.buffer)
+    local proto = brw:ReadInt16()
+    local session = brw:ReadInt32()
+    local opt = brw:ReadInt16()
+    local room_id = brw:ReadInt16()
+    local name = brw:ReadString()
+    local money = brw:ReadInt64()
+    local room_count = brw:ReadInt16()
+    local room_players = {}
+    for i = 1, room_count do
+        room_players[#room_players + 1] = brw:ReadInt16()
+    end
+    brw:EndRead()
+    self.view:FlushHall(name, money, room_players)
+end
+
+function HallCtrl:ResJoin(info)
+    local brw = BufferRW()
+    brw:BeginRead(info.buffer)
+    local proto = brw:ReadInt16()
+    local session = brw:ReadInt32()
+    local opt = brw:ReadInt16()
+    local status = brw:ReadBoolean()
+    if status then
+        print_error("-----------> 进入房间")
+        ViewManager:Close(View.HallView)
+        ViewManager:Open(View.RoomView)
+    else
+        print_error("-----------> 进入失败")
+    end
+end

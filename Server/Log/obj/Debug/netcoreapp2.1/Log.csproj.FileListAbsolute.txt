@@ -1,0 +1,8 @@
+E:\GitHub\BlackJack\Server\Log\bin\Debug\netcoreapp2.1\Log.deps.json
+E:\GitHub\BlackJack\Server\Log\bin\Debug\netcoreapp2.1\Log.dll
+E:\GitHub\BlackJack\Server\Log\bin\Debug\netcoreapp2.1\Log.pdb
+E:\GitHub\BlackJack\Server\Log\obj\Debug\netcoreapp2.1\Log.csprojAssemblyReference.cache
+E:\GitHub\BlackJack\Server\Log\obj\Debug\netcoreapp2.1\Log.AssemblyInfoInputs.cache
+E:\GitHub\BlackJack\Server\Log\obj\Debug\netcoreapp2.1\Log.AssemblyInfo.cs
+E:\GitHub\BlackJack\Server\Log\obj\Debug\netcoreapp2.1\Log.dll
+E:\GitHub\BlackJack\Server\Log\obj\Debug\netcoreapp2.1\Log.pdb

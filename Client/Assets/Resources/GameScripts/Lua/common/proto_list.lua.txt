@@ -1,0 +1,28 @@
+local proto_list = {
+	-- 连接
+	[10000] = function(info)
+		print_error("-----------> 连接成功")
+		local brw = BufferRW()
+		brw:BeginRead(info.buffer)
+		local proto = brw:ReadInt16()
+		SESSION_ID = brw:ReadInt32()
+		brw:EndRead()
+	end,
+	-- 登录
+	[10001] = function(info)
+		print_error("-----------> 登录成功")
+		LoginCtrl:ResLogin(info)
+	end,
+	-- 大厅
+	[10002] = function(info)
+		print_error("-----------> 大厅响应")
+		HallCtrl:ResHall(info)
+	end,
+	-- 房间
+	[10003] = function(info)
+		print_error("-----------> 房间响应")
+		RoomCtrl:ResRoom(info)
+	end
+}
+
+return proto_list

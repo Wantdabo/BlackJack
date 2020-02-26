@@ -1,0 +1,8 @@
+RoomData = RoomData or BaseClass()
+
+function RoomData:Ctor()
+end
+
+function RoomData:Dtor()
+
+end
